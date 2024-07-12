@@ -1,0 +1,117 @@
+body{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+#board{
+    background-image: url("nigga.jpeg");
+  width: 100%;
+  height: 100vh;
+
+    display: block;
+    background-size: cover;
+    border-radius: 10px;
+    
+}
+#board.paused{
+    filter: brightness(0.5) blur(1px);
+
+}
+.canvas-container {
+    position: relative; /* Ensure canvas container is positioned relative */
+
+}
+.hidden {
+    display: none;
+
+}
+.button {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 2%;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+
+}
+.button img{
+ 
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+
+}
+.pause-box {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.resume-btn, #menu-btn{
+    position: absolute;
+
+    height: 45px;
+    width: 200px;
+    text-align: center;
+    background-color: #5ce4b0;
+    border:none;
+    border-radius: 40px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.517);
+}
+#menu-btn{
+    display: none;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.resume-btn{
+    width: 200px;
+    padding: 0 60px;
+    margin-bottom: 15px;
+    top:  30%;
+    left: 50%;
+    color: white;
+    text-align: start;
+    transform: translate(-50%, -50%);
+    
+}
+.resume-box{
+    display: flex;
+    align-items: center;
+
+    padding: 0 60px;
+}
+#resume-btn img{
+    position: absolute;
+    width: 24px;
+    top: 20%;
+    right: 27px;
+}
+.pause-btn{
+    display: absolute;
+    color: rgb(79, 211, 255);
+    top: 80%;
+}
